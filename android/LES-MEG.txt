@@ -1,0 +1,16 @@
+Bildesamler
+
+Appen ber om tilgang til telefonens bilder. Velg «Tillat alle bilder» for
+å analysere hele bildebiblioteket automatisk. Ingen enkeltbilder må velges.
+Analysen starter ved gitt tillatelse. Senere søk bruker lagrede OCR-tekster
+og motivetiketter. Endrede og nye bilder analyseres ved neste søk.
+
+Smart søk kombinerer OCR og motivetiketter med enkle ordregler, blant annet
+for spanske ord og vanlige norske motivord. Dette er ikke en generell
+språkmodell. Analysen skjer på telefonen. Appen må være åpen under analysen.
+
+Bygg: Java 17, Gradle 8.9, Android SDK 35.
+gradle testDebugUnitTest lintDebug assembleDebug
+GitHub Actions: .github/workflows/build-apk.yml
+APK: app/build/outputs/apk/debug/app-debug.apk
+Debug-APK er signert og kan installeres på Android 10 eller nyere.
